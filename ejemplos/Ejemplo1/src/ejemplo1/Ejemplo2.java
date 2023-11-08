@@ -19,7 +19,7 @@ public class Ejemplo2 {
     public static void main(String[] args) {
         // Condicionales simples
         Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+    entrada.useLocale(Locale.US);
         double promedio;
         System.out.println("Ingrese la nota necesaria");
         promedio = entrada.nextDouble();
