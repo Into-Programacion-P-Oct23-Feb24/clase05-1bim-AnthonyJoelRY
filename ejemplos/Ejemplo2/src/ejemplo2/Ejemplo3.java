@@ -25,11 +25,19 @@ public class Ejemplo3 {
     public static void main(String[] args) {
         // Condicionales compuestos
         Scanner entrada = new Scanner(System.in);
+        Scanner entrada1 = new Scanner(System.in);
         entrada.useLocale(Locale.US); // 10,2 / 10.2
         double promedio;
         double nota1;
         double nota2;
         double suma;
+         String nombreEstudiante;
+        String apellidoEstudiante;
+        
+        System.out.println("Ingrese el nombre del estudiante");
+        nombreEstudiante = entrada1.nextLine();
+        System.out.println("Ingrese el apellido del estudiante");
+        apellidoEstudiante = entrada1.nextLine();
         
         System.out.println("Ingrese el nota 1, por favor");
         nota1 = entrada.nextDouble();
@@ -39,11 +47,11 @@ public class Ejemplo3 {
         promedio = suma / 2;
         
         if (promedio >= 7.5) {
-            System.out.printf("Estudiante aprobado con un "
-                    + "promedio: %.2f\n", promedio);
+            System.out.printf("Estudiante %s %s, con notas de %s y %s aprobado"
+                    + " con un promedio: %.2f\n", nombreEstudiante,apellidoEstudiante,nota1,nota2,promedio);
         }else{
-            System.out.printf("Estudiante reprobado con un "
-                    + "promedio: %.2f\n", promedio);
+            System.out.printf("Estudiante %s %s, con notas de %s y %s reprobados"
+                    + " con un promedio: %.2f\n", nombreEstudiante,apellidoEstudiante,nota1,nota2,promedio);
         }
     }
     
