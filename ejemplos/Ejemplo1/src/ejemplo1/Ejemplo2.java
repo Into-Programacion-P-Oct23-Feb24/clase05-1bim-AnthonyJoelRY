@@ -28,10 +28,13 @@ public class Ejemplo2 {
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
         } // -------------
+        if (promedio > 10) { // Falso
+            System.out.printf("Valor no valido\n");
+        }
         if (promedio < 7.5) { // Falso
             System.out.printf("Estudiante reprobado con un "
                     + "promedio: %.2f\n", promedio);
-        } // -------------
+        }
 
     }
 
